@@ -1,0 +1,62 @@
+.header {
+  padding: 25px 0 23px;
+  border-bottom: 1px solid $color-gainsboro;
+
+  @media (max-width: $vp-tablet) {
+    padding: 17px 2px;
+  }
+  @media (max-width: $vp-mobile) {
+    padding: 18px 0;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__menu {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 23px;
+    margin: 0 72px 0 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    @media (max-width: $vp-tablet) {
+      left: auto;
+      right: 0;
+      width: 52px;
+      height: 20px;
+      margin: 0 auto;
+    }
+
+    &-icon {
+      @media (max-width: $vp-tablet) {
+        width: 52px;
+        height: 20px;
+      }
+    }
+  }
+
+  &__logo-link {
+    color: $color-blue-charcoa;
+  }
+
+  &__logo {
+    @media (max-width: $vp-tablet) {
+      width: 105px;
+      height: 24px;
+    }
+    @media (max-width: $vp-mobile) {
+      width: 88px;
+      height: 20px;
+    }
+  }
+}
+

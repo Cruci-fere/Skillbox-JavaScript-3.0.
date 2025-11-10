@@ -1,0 +1,45 @@
+.page-content {
+  padding: 40px 0 120px;
+
+  @media (max-width: $vp-tablet) {
+      padding: 20px 0 80px;
+    } 
+  @media (max-width: $vp-mobile) {
+    padding: 16px 0 60px;
+    }
+
+  &__title {
+    max-width: 840px;
+    margin: 0 auto 60px;
+    font-size: 60px;
+    font-weight: 200;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 48px;
+      line-height: 52px;
+      margin: 0 10px 40px;
+    }
+    @media (max-width: $vp-mobile) {
+      margin: 0 auto 30px;
+      font-size: 32px;
+      line-height: 34px;
+    }
+  }
+
+  &__title--h2 {
+    font-size: 48px;
+    line-height: 48px;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 40px;
+      line-height: 44px;
+    }
+    @media (max-width: $vp-mobile) {
+      font-size: 30px;
+      line-height: 32px;
+    }
+  }
+}

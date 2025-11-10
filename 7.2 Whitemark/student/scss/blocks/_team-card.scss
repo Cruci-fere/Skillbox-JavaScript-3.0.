@@ -1,0 +1,175 @@
+.team-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 30px;
+  background-color: $color-twilight-blue;
+  border-radius: 20px;
+  min-height: 463px;
+
+  @media (max-width: $vp-tablet) {
+    min-height: auto;
+  }
+
+  @media (max-width: $vp-mobile) {
+    padding: 20px;
+    min-height: 460px;
+  }
+
+  &__job-title {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 5px 0;
+
+    @media (max-width: $vp-mobile) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__name {
+    margin: 0 0 20px 0;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    @media (max-width: $vp-mobile) {
+      margin: 0 0 15px 0;
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 30px;
+    height: 100%;
+
+    @media (max-width: $vp-mobile) {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      gap: 15px;
+    }
+  }
+
+  &__img {
+    width: 220px;
+    height: 100%;
+    border-radius: 12px;
+
+    @media (max-width: $vp-mobile) {
+      width: 120px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: $vp-mobile) {
+      flex: 1;
+    }
+  }
+
+  &__quote {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    line-height: 22px;
+
+    @media (max-width: $vp-mobile) {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 9px 0;
+    }
+  }
+
+  &--center &__quote {
+    text-align: center;
+  }
+
+  &__quote-text {
+    margin: 0;
+
+    @media (max-width: $vp-tablet) {
+      text-align: start;
+    }
+  }
+
+  &__description {
+    max-width: 270px;
+    margin: 0 0 20px auto;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+
+    @media (max-width: $vp-tablet) {
+      max-width: 300px;
+      text-align: end;
+    }
+
+    @media (max-width: $vp-mobile) {
+      max-width: 240px;
+      font-size: 12px;
+      line-height: 14px;
+      margin: 0 0 25px auto;
+    }
+  }
+
+  &--center &__description {
+    text-align: center;
+
+    @media (max-width: $vp-mobile) {
+      text-align: right;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: auto 0 0 0;
+
+    @media (max-width: $vp-tablet) {
+      justify-content: end;
+    }
+
+  }
+
+  &__link {
+    width: 140px;
+    padding: 7px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-blue-charcoa;
+    text-align: center;
+    border-radius: 40px;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 9px;
+    }
+  }
+
+  &__link--secondary {
+    background-color: $color-ecru-white;
+    transition: background-color 0.2s;
+
+    &:hover,
+    &:focus {
+      background-color: $color-chrome-white;
+      outline: none;
+      text-decoration: none;
+    }
+  }
+}

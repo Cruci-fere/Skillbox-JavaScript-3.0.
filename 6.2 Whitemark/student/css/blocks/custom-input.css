@@ -1,0 +1,82 @@
+.custom-input {
+	display: inline-block;
+  position: relative;
+
+}
+
+.custom-input__input {
+	border: solid 1px #D6D2C4;
+	width: 540px;
+  height: 56px;
+	padding: 18px 50px 18px 20px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-input__title {
+  position: absolute;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	color: #1D252D;
+  padding: 0 8px;
+  top: -8px;
+  left: 12px;
+  background-color: #FFF;
+}
+
+.custom-input__icon {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #D6D2C4;
+  transition: color 0.3s ease;
+}
+
+.custom-input__error {
+  position: absolute;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #E80E0A;
+  top: 60px;
+  right: 404px;
+  display: none;
+}
+
+.custom-input--error .custom-input__input {
+  border-color: #E80E0A;
+  background-color: #FFFAFA;
+}
+
+.custom-input--error .custom-input__icon {
+  color: #F26F6C;
+}
+
+.custom-input--error .custom-input__error {
+  display: block;
+}
+
+.custom-input__input:hover {
+  border-color: #1D252D;
+}
+
+.custom-input__input:hover ~ .custom-input__icon {
+  color: #757576;
+}
+
+.custom-input__input:focus {
+  border-color: #1D252D;
+}
+
+.custom-input__input:focus ~ .custom-input__icon {
+  color: #757576;
+}
+
+.custom-input__input:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.custom-input__input:disabled ~ .custom-input__icon {
+  opacity: 0.5;
+}

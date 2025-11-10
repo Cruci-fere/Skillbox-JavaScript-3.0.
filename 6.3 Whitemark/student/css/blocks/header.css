@@ -1,0 +1,115 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 80px;
+  padding: 22px 60px;
+  z-index: 1000;
+  background-color: #EFEDE7;
+  align-content: center;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__menu {
+  padding: 0;
+  line-height: 0;
+  color: transparent;
+  background-color: initial;
+  border: none;
+  border-radius: 0;
+	cursor: pointer;
+}
+
+.header__content-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__content-item {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  cursor: pointer;
+  color: #090909;
+}
+
+.header__content-counter {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.header-content-like {
+  color: #AC8361;
+}
+
+.header__content-count {
+  position: absolute;
+  right: 15px;
+  color: #fff;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__buttons{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.header__button{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  width: 210px;
+  height: 90px;
+  border: none;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  padding: 30px 29px;
+}
+
+.header__button--active {
+  background-color: #F3F3F3;
+}
+
+.header__button--visual {
+  border-bottom-left-radius: 20px;
+  padding-left: 40px;
+}
+
+.header__button--param {
+  border-bottom-right-radius: 20px;
+  padding-left: 40px;
+}
+
+.header__icon {
+  fill: transparent;
+}
+
+.header__button-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  color: #AC8361;
+}
+
+.header__button--active .header__button-text {
+  color: #090909;
+}

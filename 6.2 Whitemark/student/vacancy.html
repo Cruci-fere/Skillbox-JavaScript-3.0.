@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Вакансии - Sminex - ИНТЕКО</title>
+</head>
+
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+<header class="header">
+  <div class="header__content">
+    <button class="header__menu" aria-label="Переключаетель меню">
+      <svg class="header__burger-icon" width="60" height="23" aria-hidden="true">
+        <use xlink:href="images/sprite.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <a class="header__logo-link" href="#" aria-label="Переход на главную страницу Sminex">
+      <svg class="header__logo" width="115" height="27" aria-hidden="true">
+        <use xlink:href="images/sprite.svg#icon-logo"></use>
+      </svg>
+    </a>
+  </div>
+</header>
+<main style="flex: 1;">
+  <!-- Вакансии -->
+  <section class="vacancies">
+    <div class="container">
+      <div class="vacancies__info">
+        <h1 class="vacancies__info-title">Вакансии</h1>
+        <div class="vacancies__contacts">
+          <span class="vacancies__contacts-text">Контакты HR-отдела</span>
+          <div class="vacancies__contacts-info">
+            <a href="#" class="vacancies__contacts-item">+7 (495) 487-88-08</a>
+            <div class="vacancies__contacts-line"></div>
+            <a href="#" class="vacancies__contacts-item">hr@sminex.com</a>
+          </div>
+          <a href="#" class="vacancies__contacts-link">Отправить резюме</a>
+        </div>
+      </div>
+      <div class="vacancies__jobs">
+        <div class="vacancies__jobs-item">
+          <span class="vacancies__jobs-vacancy">руководитель группы продаж через sminex club</span>
+          <span class="vacancies__jobs-salary">240&nbsp;000&nbsp;руб.</span>
+        </div>
+        <div class="vacancies__jobs-item">
+          <span class="vacancies__jobs-vacancy">руководитель группы архитекторов (планировочные решения)</span>
+          <span class="vacancies__jobs-salary">от&nbsp;230&nbsp;000 до&nbsp;345&nbsp;000&nbsp;руб.</span>
+        </div>
+        <div class="vacancies__jobs-item">
+          <span class="vacancies__jobs-vacancy">администратор ресепшен/секретарь</span>
+          <span class="vacancies__jobs-salary">от&nbsp;65&nbsp;000 до&nbsp;85&nbsp;000&nbsp;руб.</span>
+        </div>
+        <div class="vacancies__jobs-item">
+          <span class="vacancies__jobs-vacancy">ведущий специалист по&nbsp;закупкам (отделочные материалы)</span>
+          <span class="vacancies__jobs-salary">от&nbsp;195&nbsp;000 до&nbsp;290&nbsp;000&nbsp;руб.</span>
+        </div>
+        <div class="vacancies__jobs-item">
+          <span class="vacancies__jobs-vacancy">ведущий специалист по&nbsp;закупкам (инженерное оборудование)</span>
+          <span class="vacancies__jobs-salary">от&nbsp;190&nbsp;000 до&nbsp;290&nbsp;000&nbsp;руб.</span>
+        </div>
+        <div class="vacancies__jobs-item">
+          <span class="vacancies__jobs-vacancy">начальник отдела проектирования&nbsp;кр (проектное бюро)</span>
+          <span class="vacancies__jobs-salary">з/п по&nbsp;итогам собеседования</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="resume">
+    <div class="container">
+      <div class="resume__info">
+      <h2 class="resume__info-title">отправить резюме</h2>
+      <span class="resume__info-description">Мы&nbsp;свяжемся с&nbsp;вами, когда появится подходящая вакансия</span>
+    </div>
+    <form action="#" method="POST" novalidate>
+      <div class="resume__input-wrapper">
+        <div class="custom-input">
+          <label class="custom-input__title" for="firstName">Имя*</label>
+          <input class="custom-input__input" type="text" id="firstName" name="firstName" required>
+          <span class="custom-input__error">Некорректное значение</span>
+        </div>
+        <div class="custom-input">
+          <label class="custom-input__title" for="phone">Телефон*</label>
+          <input class="custom-input__input" type="tel" id="phone" name="phone" required>
+          <span class="custom-input__error">Некорректное значение</span>
+        </div>
+        <div class="custom-input">
+          <label class="custom-input__title" for="lastName">Фамилия*</label>
+          <input class="custom-input__input" type="text" id="lastName" name="lastName" required>
+          <span class="custom-input__error">Некорректное значение</span>
+        </div>
+        <div class="custom-input" id="emailWrapper">
+          <label class="custom-input__title" for="email">E-mail*</label>
+          <input class="custom-input__input" type="email" id="email" name="email" required>
+          <svg class="custom-input__icon" width="28" height="28" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-email" fill="currentColor"></use>
+          </svg>
+          <span class="custom-input__error">Некорректное значение</span>
+        </div>
+        <div class="custom-input">
+          <label class="custom-input__title" for="position">Желаемая должность*</label>
+          <input class="custom-input__input" type="text" id="position" name="position" required>
+          <span class="custom-input__error">Некорректное значение</span>
+        </div>
+        <div class="custom-input">
+          <label class="custom-input__title" for="resumeLink">Ссылка на резюме*</label>
+          <input class="custom-input__input" type="url" id="resumeLink" name="resumeLink" required>
+          <svg class="custom-input__icon" width="28" height="28" aria-hidden="true">
+            <use xlink:href="images/sprite.svg#icon-clip" fill="currentColor"></use>
+          </svg>
+          <span class="custom-input__error">Некорректное значение</span>
+        </div>
+      </div>
+      <div class="resume__sending-wrapper">
+        <div class="custom-checkbox">
+          <div class="custom-checkbox__wrapper">
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="custom-checkbox__label">
+              <svg class="custom-checkbox__icon" width="10" height="10" aria-hidden="true">
+                <use xlink:href="images/sprite.svg#icon-check"></use>
+              </svg>
+            </label>
+          </div>
+          <label class="custom-checkbox__text" for="checkbox">
+            Даю согласие на&nbsp;обработку 
+            <a href="#" class="custom-checkbox__link">персональных данных</a>
+          </label>
+        </div>
+        <button class="resum-button" type="submit" disabled>
+          <span class="resum-button-text">Отправить заявку</span>
+        </button>
+      </div>
+    </form>
+    </div>
+  </section>
+  <div class="cookie">
+    <span class="cookie__text">Мы используем файлы cookie для улучшения работы этого сайта.  Для получения дополнительной информации ознакомьтесь с нашей <a href="#" class="cookie__link">Политикой конфиденциальности</a></span>
+    <button class="cookie__btn" type="button">
+      <span class="cookie__btn-text">Подробнее</span>
+    </button>
+    <svg class="cookie__icon" width="20" height="20" aria-hidden="true">
+      <use xlink:href="images/sprite.svg#icon-close"></use>
+    </svg>
+  </div>
+
+</main>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <a class="footer__logo-link" href="#" aria-label="Переход на главную страницу Sminex">
+        <svg class="footer__logo" width="115" height="27" aria-hidden="true">
+          <use xlink:href="images/sprite.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <div class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Коротко о нас</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Создаем уникальные проекты</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Служба комфорта</a>
+          </li>
+        </ul>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Работодатель №1</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Информационный центр</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Sminex Club</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>
+    const emailInput = document.getElementById('email');
+    const emailWrapper = document.getElementById('emailWrapper');
+    const cookieDiv = document.querySelector('.cookie');
+    const closeIcon = document.querySelector('.cookie__icon');
+
+    setTimeout(() => {
+      cookieDiv.style.display = 'flex';
+    }, 30000);
+
+    closeIcon.addEventListener('click', () => {
+      cookieDiv.style.display = 'none';
+    });
+
+    function validateEmail(email) {
+      const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return re.test(String(email).toLowerCase());
+    }
+
+
+    emailInput.addEventListener('blur', () => {
+      if (!validateEmail(emailInput.value)) {
+        emailWrapper.classList.add('custom-input--error');
+      } else {
+        emailWrapper.classList.remove('custom-input--error');
+      }
+    });
+
+    emailInput.addEventListener('input', () => {
+      if (emailWrapper.classList.contains('custom-input--error')) {
+        if (validateEmail(emailInput.value)) {
+          emailWrapper.classList.remove('custom-input--error');
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>

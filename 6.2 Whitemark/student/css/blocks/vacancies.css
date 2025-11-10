@@ -1,0 +1,104 @@
+.vacancies {
+  padding: 120px 0 116px 0;
+}
+
+.vacancies__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 39px;
+}
+
+.vacancies__info-title {
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 72px;
+  text-transform: uppercase;
+  color: #1D252D;
+  margin: 0;
+}
+
+.vacancies__contacts {
+  text-align: right;
+}
+
+.vacancies__contacts-text {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1D252D;
+  margin-bottom: 5px;
+}
+
+.vacancies__contacts-info {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.vacancies__contacts-item {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #1D252D;
+}
+
+.vacancies__contacts-item:hover {
+  text-decoration: underline;
+}
+
+.vacancies__contacts-line {
+  height: 20px;
+  border-left: solid 1px #1D252D;
+  width: 1px;
+  color: #1D252D;
+}
+
+.vacancies__contacts-link {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #1D252D;
+  text-decoration: underline;
+}
+
+.vacancies__contacts-link:hover {
+  color: rgba(29, 37, 45, 0.5);
+}
+
+.vacancies__jobs-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 27.5px 28px;
+  border-bottom: solid 1px #D6D2C4;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.vacancies__jobs-item:first-child {
+  border-top: solid 1px #D6D2C4;
+}
+
+.vacancies__jobs-item:hover {
+  background-color: rgba(214, 210, 196, 0.2)
+  
+}
+
+.vacancies__jobs-vacancy {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1D252D;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.vacancies__jobs-salary {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1D252D;
+  text-align: right;
+  pointer-events: none;
+}

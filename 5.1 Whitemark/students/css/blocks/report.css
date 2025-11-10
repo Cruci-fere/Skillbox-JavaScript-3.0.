@@ -1,0 +1,93 @@
+.report {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #053947;
+  padding: 40px 0px 40px 100px;
+  justify-content: space-between;
+}
+
+.report__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.report__action-back {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  outline: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.report__action-back-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #FFF;
+}
+
+.report__month-title {
+  font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+.report__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 0 0 0 15px;
+}
+
+.report__list-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFF;
+  width: 325px;
+}
+
+.report__months-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.report__action-month {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+.report__action-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+  color: #B68E6C;
+}
+
+.report__action-text--left {
+  text-align: left;
+}
+
+.report__arrow-right {
+  rotate: 180deg;
+}

@@ -1,0 +1,94 @@
+.intro {
+  display: flex;
+  width: calc(100% + 360px);
+  position: relative;
+  left: -180px;
+  min-height: 740px;
+  max-width: 1728px;
+  margin: 0 auto;
+  background-image: image-set(
+      url("../../images/intro.jpg") 1x,
+      url("../../images/intro@2x.jpg") 2x
+    );
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+
+  @media (max-width: $vp-tablet) {
+    width: calc(100% + 40px);
+    left: -20px;
+    min-height: 460px;
+    max-width: 768px;
+    background-image: image-set(
+      url("../../images/intro-tablet.jpg") 1x,
+      url("../../images/intro-tablet@2x.jpg") 2x
+    );
+  }
+
+  @media(max-width: 1023px) {
+    max-width: calc(100% + 40px);
+    left: -20px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    width: calc(100% + 40px);
+    left: -20px;
+    min-height: 300px;
+    max-width: 375px;
+    background-image: image-set(
+      url("../../images/intro-mobile.jpg") 1x,
+      url("../../images/intro-mobile@2x.jpg") 2x
+    );
+    padding: 0;
+    margin-bottom: 94px;
+  }
+
+  @media(max-width: 767px) {
+    max-width: calc(100% + 40px);
+    left: -20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, $color-black 0%, transparent 30%);
+    pointer-events: none;
+
+    @media (max-width: $vp-mobile) {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-family: $ff-tenor;
+    max-width: 800px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    z-index: 1;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 40px;
+      line-height: 46px;
+      max-width: 520px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 28px;
+      line-height: 36px;
+      max-width: 335px;
+      position: relative;
+      top: 95px;
+    }
+  }
+}

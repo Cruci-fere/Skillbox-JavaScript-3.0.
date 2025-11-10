@@ -1,0 +1,43 @@
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: flex-end;
+  gap: 20px 32px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--maintenance {
+    justify-content: center;
+  }
+
+  @media (max-width: $vp-tablet) {
+    gap: 20px;
+
+    &--maintenance {
+      gap: 32px;
+    }
+  }
+
+  @media (max-width: $vp-mobile) {
+    gap: 30px;
+    align-self: center;
+
+    &--maintenance {
+      gap: 24px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    color: $color-trout;
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $color-ecru-white;
+
+    }
+  }
+}

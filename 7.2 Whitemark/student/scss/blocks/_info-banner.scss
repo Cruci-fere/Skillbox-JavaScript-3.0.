@@ -1,0 +1,113 @@
+.info-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 120px 0;
+  padding: 85px 90px;
+  background: $color-very-light-grey url("../../images/banner.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 0 60px 0 60px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/banner@2x.jpg");
+  }
+
+  @media (max-width: $vp-tablet) {
+      background-image: url("../../images/banner-tablet.jpg");
+      padding: 40px 104px;
+      margin: 0 0 80px 0;
+      flex-direction: column;
+    }
+  @media (max-width: $vp-tablet) and (min-resolution: 2dppx) {
+      background-image: url("../../images/banner-tablet@2x.jpg");
+    }
+  @media (max-width: $vp-mobile) {
+    background-image: url("../../images/banner-mobile.jpg");
+    padding: 40px 15px;
+    margin: 0 0 60px 0;
+  }
+  @media (max-width: $vp-mobile) and (min-resolution: 2dppx) {
+    background-image: url("../../images/banner-mobile@2x.jpg");
+  }
+
+  &__title {
+    margin: 0 40px 0 0;
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 48px;
+    color: $color-white;
+    text-transform: uppercase;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 36px;
+      line-height: 40px;
+      margin: 0 0 20px 0;
+    }
+    @media (max-width: $vp-mobile) {
+      font-size: 24px;
+      line-height: 26px;
+      margin: 0 0 15px 0;
+    }
+  }
+
+  &__inner {
+    max-width: 460px;
+    margin: 0 0 0 auto;
+
+    @media (max-width: $vp-tablet) {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+    @media (max-width: $vp-mobile) {
+      max-width: 305px;
+    }
+  }
+
+  &__text {
+    margin: 0 0 30px 0;
+    font-size: 16px;
+    line-height: 22px;
+    color: $color-white;
+    text-align: right;
+
+    @media (max-width: $vp-tablet) {
+      text-align: center;
+      margin: 0 0 23px 0;
+    }
+    @media (max-width: $vp-mobile) {
+      font-size: 14px;
+      line-height: 18px;
+      margin: 0 0 16px 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 220px;
+    margin: 0 0 0 auto;
+    padding: 7px 10px;
+    font-size: 14px;
+    line-height: 18px;
+    color: $color-blue-charcoa;
+    text-align: center;
+    background-color: $color-ecru-white;
+    border-radius: 40px;
+    transition: background-color 0.2s;
+
+    &:hover,
+    &:focus {
+      background-color: $color-chrome-white;
+      outline: none;
+    }
+
+    @media (max-width: $vp-tablet) {
+      margin: 0 auto
+    }
+    @media (max-width: $vp-mobile) {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 9px 10px;
+      max-width: 160px;
+    }
+  }
+}

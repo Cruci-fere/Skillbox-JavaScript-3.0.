@@ -1,0 +1,86 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 58px;
+}
+
+.resume__info-title {
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 58px;
+  color: #1D252D;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.resume__info-description {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1D252D;
+  text-align: right;
+  width: 280px;
+}
+
+.resume__input-wrapper {
+  display: flex;
+  gap: 43px 40px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.resume__sending-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.resum-button {
+  width: 320px;
+  border-radius: 40px;
+  background-color: #D6D2C4;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  cursor: pointer;
+}
+
+.resum-button:hover {
+  border: 1px solid #D6D2C4;
+  background-color: #0E1114;
+}
+
+.resum-button:focus {
+  border: 1px solid #D6D2C4;
+  background-color: #1D252D;
+}
+
+.resum-button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.resum-button-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #1D252D;
+  transition: color 0.3s ease;
+}
+
+.resum-button:hover .resum-button-text {
+  color: #FFF;
+}
+
+.resum-button:focus .resum-button-text {
+  color: #FFF;
+}

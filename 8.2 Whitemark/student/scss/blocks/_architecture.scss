@@ -1,0 +1,229 @@
+.architecture {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  @media (max-width: $vp-tablet) {
+    gap: 18px;
+  }
+
+  @media (max-width: $vp-mobile) {
+    gap: 44px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $vp-mobile) {
+      flex-direction: column;
+      gap: 15px;
+      justify-content: normal;
+    }
+  }
+
+  &__title {
+    font-family: $ff-tenor;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: $color-fallow;
+    margin: 0;
+    max-width: 400px;
+
+    @media (max-width: $vp-tablet) {
+      max-width: 230px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+    max-width: 400px;
+
+    @media (max-width: $vp-tablet) {
+      max-width: 230px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      text-align: center;
+      max-width: 300px;
+    }
+  }
+
+  &__text {
+    font-family: $ff-tenor;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: $color-fallow;
+    margin: 0;
+    text-align: center;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $vp-mobile) {
+      justify-content: normal;
+      display: flex !important;
+      overflow-x: auto;
+      gap: 10px;
+      margin: 0px -20px 0 0px;
+      align-self: center;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+
+    @media (max-width: $vp-tablet) {
+      max-width: 230px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      max-width: 160px;
+      scroll-snap-align: start;
+      flex: 0 0 auto;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 400px;
+    min-height: 700px;
+
+    @media (max-width: 1600px) {
+      max-width: 230px;
+      min-height: 410px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      max-width: 160px;
+      min-height: 285px;
+    }
+
+    &--1 {
+      border-bottom-right-radius: 200px;
+      border-bottom-left-radius: 200px;
+      background-image: image-set(
+        url("../../images/architecture-1.jpg") 1x,
+        url("../../images/architecture-1@2x.jpg") 2x
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (max-width: $vp-tablet) {
+        border-bottom-right-radius: 115px;
+        border-bottom-left-radius: 115px;
+        background-image: image-set(
+          url("../../images/architecture-1-tablet.jpg") 1x,
+          url("../../images/architecture-1-tablet@2x.jpg") 2x
+        );
+      }
+
+      @media (max-width: $vp-mobile) {
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        background-image: image-set(
+          url("../../images/architecture-1-mobile.jpg") 1x,
+          url("../../images/architecture-1-mobile@2x.jpg") 2x
+        );
+      }
+    }
+
+    &--2 {
+      border-top-right-radius: 200px;
+      border-top-left-radius: 200px;
+      background-image: image-set(
+        url("../../images/architecture-2.jpg") 1x,
+        url("../../images/architecture-2@2x.jpg") 2x
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (max-width: $vp-tablet) {
+        border-top-right-radius: 115px;
+        border-top-left-radius: 115px;
+        background-image: image-set(
+          url("../../images/architecture-2-tablet.jpg") 1x,
+          url("../../images/architecture-2-tablet@2x.jpg") 2x
+        );
+      }
+
+      @media (max-width: $vp-mobile) {
+        border-top-right-radius:80px;
+        border-top-left-radius: 80px;
+        background-image: image-set(
+          url("../../images/architecture-2-mobile.jpg") 1x,
+          url("../../images/architecture-2-mobile@2x.jpg") 2x
+        );
+      }
+    }
+
+    &--3 {
+      border-bottom-right-radius: 200px;
+      border-bottom-left-radius: 200px;
+      background-image: image-set(
+        url("../../images/architecture-3.jpg") 1x,
+        url("../../images/architecture-3@2x.jpg") 2x
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (max-width: $vp-tablet) {
+        border-bottom-right-radius: 115px;
+        border-bottom-left-radius: 115px;
+        background-image: image-set(
+          url("../../images/architecture-3-tablet.jpg") 1x,
+          url("../../images/architecture-3-tablet@2x.jpg") 2x
+        );
+      }
+
+      @media (max-width: $vp-mobile) {
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        background-image: image-set(
+          url("../../images/architecture-3-mobile.jpg") 1x,
+          url("../../images/architecture-3-mobile@2x.jpg") 2x
+        );
+      }
+    }
+  }
+}

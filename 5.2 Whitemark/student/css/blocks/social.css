@@ -1,0 +1,18 @@
+.social {
+  display: flex;
+  flex-direction: row;
+  gap: 72px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.social__youtube {
+  width: 24px;
+  height: 18px;
+}
+
+.social__vk {
+  width: 24px;
+  height: 14px;
+  margin-top: 3px;
+}

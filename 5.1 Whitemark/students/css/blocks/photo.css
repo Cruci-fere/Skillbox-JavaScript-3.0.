@@ -1,0 +1,31 @@
+.photo {
+  padding: 40px 40px 40px 0;
+}
+
+.photo__gallery {
+  display: grid;
+  grid-template-columns: 160px 190px repeat(2, 160px);
+  grid-template-rows: 220px 200px 160px;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.photo__gallery-img-5 {
+  grid-row: 2;
+  grid-column: 3;
+}
+
+.photo__gallery-img-6 {
+  grid-row: 2;
+  grid-column: 4;
+}
+
+.photo__gallery-item--end-span-2 {
+  grid-column: span 2;
+}
+
+.photo__gallery-item--last {
+  grid-column: 3 / 5;
+}

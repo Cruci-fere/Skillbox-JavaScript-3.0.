@@ -1,0 +1,53 @@
+.custom-input {
+  position: relative;
+  width: 100%;
+}
+
+.custom-input__input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(9, 9, 9, 0.15);
+  padding-bottom: 4px;
+  padding-right: 28px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  box-sizing: border-box;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.custom-input__icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.custom-input__input:hover {
+  border-bottom-color: #AD8361;
+}
+
+.custom-input__input:focus {
+  outline: none;
+  border-bottom-color: #AD8361;
+}
+
+.custom-input__input:disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none;
+}
+
+.custom-input__input:disabled ~ .custom-input__icon {
+  opacity: 0.5;
+}
+
+.custom-input__input:disabled:hover,
+.custom-input__input:disabled:focus {
+  color: inherit;
+  background-color: transparent;
+  border-bottom-color: rgba(9, 9, 9, 0.15);
+}

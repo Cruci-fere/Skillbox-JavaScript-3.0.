@@ -1,0 +1,23 @@
+.custom-input {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.custom-input__input {
+	border: none;
+	width: 280px;
+	padding: 0;
+}
+
+.custom-input__title {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 120%;
+	color: #99999E;
+}
+
+.custom-input__underline {
+	height: 1px;
+	background-color: #C8C8CA;
+}

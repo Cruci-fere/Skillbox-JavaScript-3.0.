@@ -1,0 +1,17 @@
+.copyright {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+
+.copyright__text {
+  font-family: "Foros", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFF;
+  opacity: 0.4;
+  text-align: center;
+}

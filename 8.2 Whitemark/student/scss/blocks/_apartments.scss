@@ -1,0 +1,229 @@
+.apartments {
+  display: flex;
+  
+  @media (max-width: $vp-tablet) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 485px;
+    justify-content: center;
+
+    @media (max-width: $vp-tablet) {
+      max-width: 350px;
+      align-self: center;
+    }
+  }
+
+  &__title {
+    font-family: $ff-tenor;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: $color-fallow;
+    margin: 0 0 30px 0;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 24px;
+      line-height: 30px;
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 20px;
+      line-height: 24px;
+      max-width: 300px;
+      margin: 0 0 14px 0;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 40px 0;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      margin: 0 0 20px 0;
+    }
+
+    @media (max-width: $vp-mobile) {
+      max-width: 300px;
+    }
+  }
+
+  &__value {
+    font-family: $ff-tenor;
+    font-weight: 400;
+    font-size: 140px;
+    line-height: 100px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: $color-fallow;
+
+    @media (max-width: 1100px) {
+      font-size: 90px;
+      line-height: 70px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 70px;
+      line-height: 50px;
+    }
+  }
+
+  &__text {
+    font-family: $ff-tenor;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: $color-fallow;
+    text-align: center;
+    margin: 0;
+    
+    @media (max-width: 1100px) {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  &__button {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-fallow;
+    width: 220px;
+    height: 60px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border: 1px solid $color-fallow;
+    background-color: transparent;
+    transition: color 0.2s, background-color 0.2s;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 14px;
+      line-height: 20px;
+      width: 180px;
+      height: 50px;
+      align-self: center;
+    }
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $color-rustic-red;
+      background-color: $color-fallow;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+
+    @media (max-width: 1300px) {
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    @media (max-width: $vp-tablet) {
+      justify-content: center;
+      flex-direction: row;
+      gap: 0;
+      align-items: none;
+    }
+  }
+
+  &__card {
+    width: 100%;
+    max-width: 400px;
+    min-height: 700px;
+    height: 100%;
+
+    @media (max-width: 1600px) {
+      max-width: 230px;
+      min-height: 410px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      max-width: 160px;
+      min-height: 285px;
+    }
+
+    &--1 {
+      border-top-right-radius: 200px;
+      border-top-left-radius: 200px;
+      border: 1px solid $color-fallow;
+      border-bottom: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px;
+
+      @media (max-width: 1300px) {
+        border-bottom: 1px solid $color-fallow;
+      }
+
+      @media (max-width: $vp-tablet) {
+        border-top-right-radius: 115px;
+        border-top-left-radius: 115px;
+        gap: 22px;
+        border-bottom: 0;
+      }
+
+      @media (max-width: $vp-mobile) {
+        border-top-right-radius: 80px;
+        border-top-left-radius: 80px;
+        gap: 22px;
+      }
+    }
+
+    &--2 {
+      border-bottom-right-radius: 200px;
+      border-bottom-left-radius: 200px;
+      background-image: image-set(
+        url("../../images/apartments.jpg") 1x,
+        url("../../images/apartments@2x.jpg") 2x
+      );
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (max-width: $vp-tablet) {
+        border-bottom-right-radius: 115px;
+        border-bottom-left-radius: 115px;
+        background-image: image-set(
+          url("../../images/apartments-tablet.jpg") 1x,
+          url("../../images/apartments-tablet@2x.jpg") 2x
+        );
+      }
+
+      @media (max-width: $vp-mobile) {
+        border-bottom-right-radius: 80px;
+        border-bottom-left-radius: 80px;
+        background-image: image-set(
+          url("../../images/apartments-mobile.jpg") 1x,
+          url("../../images/apartments-mobile@2x.jpg") 2x
+        );
+      }
+    }
+  }
+}

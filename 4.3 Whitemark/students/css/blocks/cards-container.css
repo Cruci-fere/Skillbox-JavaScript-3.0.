@@ -1,0 +1,11 @@
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.cards-container--list {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}

@@ -1,0 +1,120 @@
+.park {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1600px) {
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  @media (max-width: $vp-tablet) {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  @media (max-width: $vp-mobile) {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  &__img {
+    @media (max-width: $vp-tablet) {
+      max-width: 340px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      max-width: 335px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+
+    @media (max-width: 1600px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $vp-tablet) {
+      max-width: 340px;
+      gap: 20px;
+    }
+    
+    @media (max-width: $vp-mobile) {
+      gap: 13px;
+    }
+  }
+
+
+  &__title {
+    max-width: 440px;
+    font-family: $ff-tenor;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: $color-fallow;
+    margin: 0;
+
+    @media (max-width: 1600px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: $vp-tablet) {
+      max-width: 440px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    @media (max-width: $vp-mobile) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+
+    @media (max-width: $vp-tablet) {
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    position: relative;
+    padding-left: 15px;
+
+    @media (max-width: $vp-tablet) {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+
+    &::before {
+      content: "•";
+      color: $color-fallow;
+      position: absolute;
+      left: 0;
+      font-size: 24px;
+      line-height: 1;
+
+      @media (max-width: $vp-tablet) {
+        font-size: 20px;
+      }
+    }
+  }
+}
